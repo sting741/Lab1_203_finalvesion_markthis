@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Lab1 {
     public static void main(String[] args) throws Exception {
@@ -28,15 +27,25 @@ public class Lab1 {
         // System.out.println(q5a.Delete());
 
         // Question5b q5b = new Question5b(al);
-        Question5c q5c = new Question5c(al);
-            Collections.sort(al);
         // ArrayList<Integer> ans = q5b.Insert(2, 5);
-        ArrayList<Integer> ans = q5c.Duplicate();
-        for (int i = 0; i < ans.size(); i++) {
-            System.out.println(ans.get(i));
-        }
-        
-        
 
+        // Question5c q5c = new Question5c(al);
+        // Collections.sort(al);
+        // ArrayList<Integer> ans = q5c.Duplicate();
+
+        // Question5d q5d = new Question5d(al);
+        // ArrayList<Integer> ans = q5d.DuplicateRemove();
+
+        // for (int i = 0; i < ans.size(); i++) {
+        //     System.out.println(ans.get(i));
+        // }
+        
+        // String myself = truongdaihoc;
+
+        Question6 q6 = new Question6("yagami", "imagay");
+        System.out.println(q6.FindLength());
+        System.out.println(q6.FindWords());
+        System.out.println(q6.Concatenate());
+        System.out.println(q6.PalindromeString());
     }
 }
